@@ -1,0 +1,1 @@
+package edu.pbs.hub.repo; import edu.pbs.hub.model.Course; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface CourseRepository extends JpaRepository<Course,Long>{ List<Course> findByActiveTrueOrderByNameAsc(); }

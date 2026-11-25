@@ -1,0 +1,1 @@
+import axios from 'axios';export const api=axios.create({baseURL:import.meta.env.VITE_API_URL||'http://localhost:8080/api'});export const getCourses=()=>api.get('/courses');export const getPapers=(params={})=>api.get('/papers',{params});export const getNotices=()=>api.get('/notices');export const adminHeaders=(key)=>({'X-ADMIN-KEY':key});

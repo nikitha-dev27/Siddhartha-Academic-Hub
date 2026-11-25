@@ -1,0 +1,1 @@
+package edu.pbs.hub.repo; import edu.pbs.hub.model.Notice; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface NoticeRepository extends JpaRepository<Notice,Long>{ List<Notice> findByActiveTrueOrderByCreatedAtDesc(); }
